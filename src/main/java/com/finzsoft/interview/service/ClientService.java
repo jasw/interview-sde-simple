@@ -12,7 +12,9 @@ public interface ClientService {
      *
      * A client can have multiple addresses and vice versa.
      *
-     * @return a Map with client ID as the key and list of addresses as the value.
+     * The result can be null.
+     *
+     * @return a Map with client ID as the key and list of addresses as the value。
      */
     Map<String, List<Address>> getClientAddressesMap();
 }
